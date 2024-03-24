@@ -1,7 +1,9 @@
-/wordpress_password.txt
+*.txt
 # Wordpress - ignore core, configuration, examples, uploads and logs.
 # https://github.com/github/gitignore/blob/main/WordPress.gitignore
 
+# vscode
+.vscode
 # Core
 #
 # Note: if you want to stage/commit WP core files
