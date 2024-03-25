@@ -5,6 +5,7 @@ services:
   db:
     image: mysql:5.7
     # image: mysql:5.7 indicates the MySQL database container image from Docker Hub used in this installation.
+    platform: linux/amd64
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: MyR00tMySQLPa$$5w0rD
@@ -13,6 +14,7 @@ services:
       MYSQL_PASSWORD: Pa$$5w0rD
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:latest
+    platform: linux/amd64
     restart: always
     environment:
       PMA_HOST: db
